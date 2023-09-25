@@ -101,7 +101,7 @@ def guardar_mensajes_encriptados(destinatario, cifrador, mensaje_cifrado):
     csvwriter.writerow(row)
 
 def desencriptar():
-    archivo = open("semana 7/mensajes_cifrados.csv", "r")
+    archivo = open("mensajes_cifrados.csv", "r")
     csvreader = csv.DictReader(archivo)
     resultado = []
     for row in csvreader:
@@ -145,7 +145,7 @@ def mostrar_mensajes_encriptados(identificar):
             print("-" * 120)
 
 def contador_mensajes():
-    archivo = open("semana 7/mensajes_cifrados.csv", "r")
+    archivo = open("mensajes_cifrados.csv", "r")
     csvreader = csv.DictReader(archivo)
     contador = 0
     for row in csvreader:
